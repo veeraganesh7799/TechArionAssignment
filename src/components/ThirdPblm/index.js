@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react'
+import Header from '../Header'
 import './index.css'
 
 const ThirdPblm = () => {
@@ -15,6 +16,8 @@ const ThirdPblm = () => {
     console.log(data)
 
   return (
+    <>
+    <Header/>
     <div className='main-container'>
         <div className='card-container'>
             {data.map(each=>(
@@ -24,6 +27,7 @@ const ThirdPblm = () => {
             ))}
         </div>
     </div>
+    </>
   )
 }
 

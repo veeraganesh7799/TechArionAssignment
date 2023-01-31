@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react'
+import Header from '../Header'
 import './index.css'
 const FourthPblm = () => {
 
@@ -46,6 +47,8 @@ const FourthPblm = () => {
     console.log(validation)
 
   return (
+    <>
+    <Header/>
     <div className='main-container'>
       <form className='form-container' onSubmit={submitHandler}>
         <div className='input-container'>
@@ -63,6 +66,7 @@ const FourthPblm = () => {
         <button type='submit'>Submit</button>
       </form>
     </div>
+    </>
   )
 }
 
